@@ -37,3 +37,10 @@ include_once("user.php");
 
 //  后台
 include_once("admin.php");
+
+//  测试-------------
+Route::group(['namespace' => 'UserApi\v1'],function(){
+    //  测试
+    Route::any('demo', 'DemoController@demo');
+
+});

@@ -14,7 +14,4 @@ Route::group(['namespace' => 'UserApi\v1'],function(){
         });
     });
 
-    //  测试
-    Route::any('demo', 'DemoController@demo');
-
 });

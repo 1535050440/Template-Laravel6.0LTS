@@ -1,6 +1,6 @@
 # Template-Laravel6.0LTS
 
-###1.项目初始化
+###项目初始化
 
 ````$xslt
 1. git clone git地址
