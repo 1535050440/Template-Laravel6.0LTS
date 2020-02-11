@@ -26,3 +26,39 @@
 
 (完)
 ````
+
+````text
+
+创建model:
+php artisan make:model Common\Model\UserModel
+
+
+````
+
+```text
+UserModel:
+
+    protected $table = 'd_user';
+
+    protected $appends = [
+        'add_time_date'
+    ];
+
+    /**
+     * 增加参数
+     *
+     * @return bool
+     * @author:  deng    (2020/2/9 17:36)
+     */
+    public function getAddTimeDateAttribute()
+        {
+            if ($this->add_time) {
+                $result = date('Y-m-d H:i:s',$this->add_time);
+            } else {
+                $result = '';
+            }
+    
+            return $result;
+    }
+
+```
